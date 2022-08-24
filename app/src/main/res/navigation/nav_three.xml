@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_three"
+    app:startDestination="@id/fragment_three">
+
+    <fragment
+        android:id="@+id/fragment_three"
+        android:name="com.ezatpanah.deeplink_navigationcomponent_youtube.Fragment_three"
+        android:label="fragment_three"
+        tools:layout="@layout/fragment_three" />
+    <fragment
+        android:id="@+id/fragmentPartThree"
+        android:name="com.ezatpanah.deeplink_navigationcomponent_youtube.Fragment_part_three"
+        android:label="fragment_part_three"
+        tools:layout="@layout/fragment_part_three" />
+</navigation>

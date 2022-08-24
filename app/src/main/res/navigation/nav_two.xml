@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_two"
+    app:startDestination="@id/fragmentTwo">
+
+    <fragment
+        android:id="@+id/fragmentTwo"
+        android:name="com.ezatpanah.deeplink_navigationcomponent_youtube.FragmentTwo"
+        android:label="fragment_two"
+        tools:layout="@layout/fragment_two" >
+        <action
+            android:id="@+id/action_fragmentTwo_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPartTwo"
+        android:name="com.ezatpanah.deeplink_navigationcomponent_youtube.Fragment_part_two"
+        android:label="fragment_part_two"
+        tools:layout="@layout/fragment_part_two" />
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.ezatpanah.deeplink_navigationcomponent_youtube.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+
+    </fragment>
+
+    <include app:graph="@navigation/nav_three" />
+</navigation>
